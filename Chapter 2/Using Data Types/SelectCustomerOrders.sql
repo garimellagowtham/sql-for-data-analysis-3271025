@@ -1,7 +1,7 @@
 SELECT Customer.CustomerID,
   FirstName,
   LastName,
-  TotalDue
+  Sum(TotalDue)
 From Customer
   JOIN Orders on 
   Customer.CustomerID = Orders.CustomerID
